@@ -56,7 +56,7 @@ const card: Variants = {
 
 export default function WorkGallery(): JSX.Element {
   return (
-    <section className="relative bg-gradient-to-br from-slate-100 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 overflow-hidden">
+    <section id="work" className="relative bg-gradient-to-br from-slate-100 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 overflow-hidden">
 
       {/* Soft decorative accents */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-indigo-300/20 dark:bg-indigo-600/20 rounded-full blur-3xl" />

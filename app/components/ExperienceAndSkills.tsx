@@ -57,7 +57,7 @@ const fadeUp: Variants = {
 
 export default function ExperienceAndSkills() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900">
+    <section id='experience' className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900">
       {/* Decorative glow */}
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl" />
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />

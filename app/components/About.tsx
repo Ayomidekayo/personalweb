@@ -18,13 +18,13 @@ const fadeUp: Variants = {
 
 export default function About(): JSX.Element {
   return (
-    <motion.section
+    <motion.section      
       variants={fadeUp}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-80px' }}
       className="relative bg-gradient-to-br from-slate-100 via-white to-indigo-50 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950"
-    >
+   id='about' >
       {/* Decorative blur */}
       <div className="absolute -top-32 -right-32 w-96 h-96 bg-indigo-300/20 dark:bg-indigo-600/20 rounded-full blur-3xl" />
 
