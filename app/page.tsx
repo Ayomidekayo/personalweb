@@ -69,15 +69,30 @@ export default function Page(): JSX.Element {
         </button>
       )}
 
-      {/* WhatsApp */}
-      <a
-        href="https://wa.me/2348153753579"
-        target="_blank"
-        className="fixed bottom-6 right-6 z-50 bg-green-500 text-white
-                   px-4 py-3 rounded-full shadow-lg hover:scale-105 transition"
-      >
-        Chat on WhatsApp
-      </a>
+     {/* WhatsApp */}
+<a
+  href="https://wa.me/2348153753579"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 z-50 
+             flex items-center gap-2
+             bg-green-500 text-white 
+             rounded-full shadow-lg 
+             transition hover:scale-105
+             px-4 py-2 sm:px-5 sm:py-3"
+>
+  {/* WhatsApp Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    className="w-5 h-5 sm:w-6 sm:h-6"
+  >
+    <path d="M12 2C6.48 2 2 6.48..."></path>
+  </svg>
+  <span className="text-sm sm:text-base font-medium">Chat on WhatsApp</span>
+</a>
+
 
       <Footer />
     </main>
