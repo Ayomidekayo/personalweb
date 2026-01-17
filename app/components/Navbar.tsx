@@ -18,10 +18,16 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      // ✅ Close mobile menu when scrolling
+      if (open) {
+        setOpen(false);
+      }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [open]); // include `open` in dependency array
 
   return (
     <motion.header
